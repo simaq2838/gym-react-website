@@ -1,0 +1,86 @@
+.training {
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
+    padding-top: 60px !important;
+    /* Modifier */
+  }
+  
+  .training__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    min-height: 550px;
+  }
+  
+  .training__card-title {
+    font-size: 3rem;
+    z-index: 2 !important;
+    text-align: center !important;
+    color: #FFFF00;
+  }
+  
+  .training__card-body {
+    padding: 10px !important;
+    text-align: center;
+    color: #fff;
+    z-index: 2 !important;
+  }
+  
+  .training__card--square {
+    aspect-ratio: 1 / 1;
+  }
+  
+  .training__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .training__image img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .training {
+      -ms-grid-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  .image-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .text-center {
+    text-align: center;
+  }
